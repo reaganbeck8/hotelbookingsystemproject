@@ -65,12 +65,13 @@
         </nav>
     <section class="hero is-fullheight">
         <article class="container">
-            <div class="columns">
-                <caption class="column is-half">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores sunt dicta et! Assumenda, neque. Debitis, tempore, minus ullam quisquam, natus vero sapiente saepe voluptatum illum voluptates asperiores. Delectus, nam!
+            <div class="columns" id="landing">
+                <caption class="column is-half" id="landing-greeting" width="10em" height="10em">
+                    <h2 class="title" style="color: #edf2f4 !important;">Ever thought of <span style="color: #8d99ae !important;">Escaping</span> the city?</h2>
+                    <button class="is-rounded">Book Now!</button>
                 </caption>
                 <figure class="column is-half">
-                    <img src="images/heroimage.png" alt="hero-image" width="10em" height="10em">
+                    <span id="landing-image"></span>
                 </figure>
             </div>
         </article>
