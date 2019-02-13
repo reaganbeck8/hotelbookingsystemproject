@@ -63,12 +63,14 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Hero containing the greeting text  -->
     <section class="hero is-fullheight">
         <article class="container">
             <div class="columns" id="landing">
                 <caption class="column is-half" id="landing-greeting" width="10em" height="10em">
                     <h2 class="title" style="color: #edf2f4 !important;">Ever thought of <span style="color: #8d99ae !important;">Escaping</span> the city?</h2>
-                    <button class="is-rounded">Book Now!</button>
+                    <button class="button is-rounded">Book Now!</button>
                 </caption>
                 <figure class="column is-half">
                     <span id="landing-image"></span>
@@ -80,23 +82,23 @@
     <section class="container">
         <form method="post" action="<?php $_SERVER['PHP_SELF']?>">
             <h1>name</h1>
-                <input class="is-rounded" type="text" name="name" placeholder="name" required>
+                <input class="button is-rounded" type="text" name="name" placeholder="name" required>
             <h1>surname</h1>
-                <input class="is-rounded" type="text" name="surname" placeholder="surname" required> 
+                <input class="button is-rounded" type="text" name="surname" placeholder="surname" required> 
             <h1>hotel</h1>
-                <select class="is-rounded" name="hotelname" required>
+                <select class="button is-rounded" name="hotelname" required>
                     <option></option>
                     <option value="The Silo">the silo</option>
                     <option value="The Radisson Red">the radisson red</option>
                     <option value="The Westin">the westin</option>
                 </select>
             <h1>check-in</h1>
-                <input class="is-rounded" type="date" name="arrival" required>
+                <input class="button is-rounded" type="date" name="arrival" required>
             <h1>check-out</h1>
-                <input class="is-rounded" type="date" name="departure" required>
+                <input class="button is-rounded" type="date" name="departure" required>
                 <br>
                     <br>
-            <input class="is-rounded" type="submit" name="insert_data" placeholder="Book Now!"required > 
+            <input class="button is-rounded" type="submit" name="insert_data" placeholder="Book Now!"required > 
         </form>
     </section>
     <!-- <section class="new-entry">

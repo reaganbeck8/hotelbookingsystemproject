@@ -1,11 +1,15 @@
+
+/* Navigation */
 #navigation {
     background-color: #8d99ae !important;
     height: 6em !important;
 }
-
+/* Body bg-color */
 body {
     background-color: #2b2d42 !important;
 }
+
+/* navigation logo */
 .nav-logo {
     width: 6.5em !important;
     height: 5em !important;
@@ -19,16 +23,16 @@ body {
 }
 
 #landing-image {
-    background-image: url('../images/heroimage.png');
+    background-image: url('../images/heroimage.png') !important; 
     width: 10em;
     height: 10em;
 
 }
 
 #landing {
-    padding-top: 12em !important;
+    padding-top: 15.5em !important;
 }
-
+/* Media queries with all its fixes for the site */
 @media (max-width: 480px) {
     #landing {
         padding-left: 2em !important;
