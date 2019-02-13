@@ -1,0 +1,18 @@
+#navigation {
+    background-color: #8d99ae !important;
+    height: 6em !important;
+}
+
+body {
+    background-color: #2b2d42 !important;
+}
+.nav-logo {
+    width: 6.5em !important;
+    height: 5em !important;
+    background-image: url('../images/logo1.png') !important;
+    background-size: cover !important;
+}
+
+#containerwidth {
+    width: 15em !important;
+}
