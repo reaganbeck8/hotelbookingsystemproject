@@ -1,5 +1,5 @@
 
- <?php include_once 'conn.php' ?>
+ <?php include_once 'includes/conn.php' ?>
 
  <?php 
 
