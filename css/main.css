@@ -29,8 +29,13 @@ body {
     padding-top: 15em !important;
 }
 
-@media screen (max-width: 320px) {
+@media (max-width: 480px) {
     #landing {
-        padding-left: 4em !important;
+        padding-left: 2em !important;
+    }
+}
+@media (max-width: 320px) {
+    #landing {
+        padding-left: 2em !important;
     }
 }
