@@ -23,15 +23,81 @@ body {
 }
 
 #landing-image {
-    background-image: url('../images/heroimage.png') !important; 
     width: 10em;
     height: 10em;
+    margin-left: 12em !important;
 
 }
 
 #landing {
     padding-top: 15.5em !important;
 }
+
+.hotels {
+    /* width: auto !important;
+    height: auto !important; */
+    background-image: url('../images/silo-rooftop-dining.jpg') !important;
+    background-size: contain !important;
+    -webkit-animation-name: ease !important;
+    
+}
+ @keyframes .hotels {
+	0% {
+        background-image: url('../images/silo-side-view.jpg') !important;
+        transition-delay: 5s !important;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    }
+    	
+}
+@keyframes .hotels {
+	15% {
+        background-image: url('../images/silo-rooftop-dining.jpg') !important;
+        transition-delay: 5s !important;
+
+	}	
+}
+@keyframes .hotels {
+	30% {
+        background-image: url('../images/westin-spa-beds.jpg') !important;
+        transition-delay: 5s !important;
+
+	}	
+}
+@keyframes .hotels {
+	45% {
+        background-image: url('../images/westin-heavenly-spa-jacuzzi.jpg') !important;
+        transition-delay: 5s !important;
+
+	}	
+}
+@keyframes .hotels {
+	60% {
+        background-image: url('../images/radisson-bathroom.jpg') !important;
+        transition-delay: 5s !important;
+ 
+	}	
+}
+@keyframes .hotels {
+	75% {
+        background-image: url('../images/radisson-red-1.jpg') !important;
+        transition-delay: 5s !important;
+       
+	}	
+}
+@keyframes .hotels {
+	90% {
+        background-image: url('../images/silo-rooftop-dining.jpg') !important;
+        transition-delay: 5s !important;
+       
+	}	
+}
+@keyframes .hotels {
+	100% {
+        background-image: url('../images/silo-penthouse.jpg') !important;
+        transition-delay: 5s !important;
+       
+	}	
+} 
 /* Media queries with all its fixes for the site */
 @media (max-width: 480px) {
     #landing {
