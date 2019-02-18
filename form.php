@@ -16,6 +16,8 @@
  <?php 
         $userReservation = new userReservation();
         $userReservation->saveUserData($db_server);
+
+        $userReservation->userBookingDetails($db_server);
 // // function that grabs the information upon submit and enters it into the database
 
 //     if(isset($_POST['insert_data'])) {
@@ -122,6 +124,15 @@
                     <option value=""></option>
                     <option value="The Silo">The Silo - R13000 per night</option>
                     <option value="The Radisson Red">The Radisson Red - R5000 per night</option>
+                    <option value="The Westin" >The Westin - R6400 per night</option>
+                </select>
+            <h1>Daily Rate:</h1>
+            <h1 class="subtitle">Please Select Your Daily Rate</h1>
+
+                <select class="button is-rounded" name="price" required>
+                    <option value="">Select One of the prices below</option>
+                    <option value="300"></option>
+                    <option value="The Radisson Red">Double Room</option>
                     <option value="The Westin" >The Westin - R6400 per night</option>
                 </select>
                 
