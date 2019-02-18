@@ -67,7 +67,7 @@ $userReservation = new userReservation();
                 $arrival =  $_POST['arrival'];
                 $departure = $_POST['departure'];
                 $price = "";
-                $totaldays = "";
+               
                 //finding absolute value from date of booking for price purposes
                 
                 $datetime1 = new DateTime($_POST['arrival']);
