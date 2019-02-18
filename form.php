@@ -122,18 +122,9 @@
             <h1>hotel</h1>
                 <select class="button is-rounded" name="hotelname" required>
                     <option value=""></option>
-                    <option value="The Silo">The Silo - R13000 per night</option>
-                    <option value="The Radisson Red">The Radisson Red - R5000 per night</option>
-                    <option value="The Westin" >The Westin - R6400 per night</option>
-                </select>
-            <h1>Daily Rate:</h1>
-            <h1 class="subtitle">Please Select Your Daily Rate</h1>
-
-                <select class="button is-rounded" name="price" required>
-                    <option value="">Select One of the prices below</option>
-                    <option value="300"></option>
-                    <option value="The Radisson Red">Double Room</option>
-                    <option value="The Westin" >The Westin - R6400 per night</option>
+                    <option value="The Silo">The Silo - R980</option>
+                    <option value="The Radisson Red">The Radisson Red - R750</option>
+                    <option value="The Westin" >The Westin R800</option>
                 </select>
                 
             <h1>check-in</h1>

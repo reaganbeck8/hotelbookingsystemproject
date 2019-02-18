@@ -24,7 +24,21 @@ $userReservation = new userReservation();
                 $hotelname = $_POST['hotelname'];
                 $arrival =  $_POST['arrival'];
                 $departure = $_POST['departure'];
+                $price = "";
 
+                switch ($hotelname) {
+
+                    case($hotelname == 'The Silo'): 
+                    $price = 980;
+                    break;
+                    case($hotelname == 'The Radisson Red'): 
+                    $price = 750;
+                    break;
+                    case($hotelname == 'The Westin'): 
+                    $price = 800;
+                    break;
+
+                }
         // equating the session variables to the post variable for later re-use on the 'reservation.php' page
                 $_SESSION['name'] = $name;
                 $_SESSION['surname'] = $surname;
