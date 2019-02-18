@@ -1,5 +1,6 @@
 <?php session_start(); ?>
  <?php include_once 'includes/conn.php'; 
+        include_once 'includes/functions.php';
  
  //initializing the session variables for later reuse
  $_SESSION['name'] = "";
@@ -13,37 +14,38 @@
  ?>
 
  <?php 
+        $userReservation = new userReservation();
+        $userReservation->saveUserData($db_server);
+// // function that grabs the information upon submit and enters it into the database
 
-// function that grabs the information upon submit and enters it into the database
-
-    if(isset($_POST['insert_data'])) {
+//     if(isset($_POST['insert_data'])) {
         
-        $name =  $_POST['name'];
-        $surname =  $_POST['surname'];
-        $hotelname = $_POST['hotelname'];
-        $arrival =  $_POST['arrival'];
-        $departure = $_POST['departure'];
+//         $name =  $_POST['name'];
+//         $surname =  $_POST['surname'];
+//         $hotelname = $_POST['hotelname'];
+//         $arrival =  $_POST['arrival'];
+//         $departure = $_POST['departure'];
 
-        // equating the session variables to the post variable for later re-use on the 'reservation.php' page
-        $_SESSION['name'] = $name;
-        $_SESSION['surname'] = $surname;
-        $_SESSION['hotelname'] = $hotelname;
-        $_SESSION['arrival'] = $arrival;
-        $_SESSION['departure'] = $departure;
+//         // equating the session variables to the post variable for later re-use on the 'reservation.php' page
+//         $_SESSION['name'] = $name;
+//         $_SESSION['surname'] = $surname;
+//         $_SESSION['hotelname'] = $hotelname;
+//         $_SESSION['arrival'] = $arrival;
+//         $_SESSION['departure'] = $departure;
  
-        // selecting the database through the connection '$db_server'
-        mysqli_select_db($db_server, 'test_db');
+//         // selecting the database through the connection '$db_server'
+//         mysqli_select_db($db_server, 'test_db');
 
-        // Building a string which will act as our query when inserted into the query function of PHP
-        $sql = "INSERT INTO users (name,surname,hotelname,arrival,departure) VALUES ('$name', '$surname', '$hotelname', '$arrival', '$departure')";
+//         // Building a string which will act as our query when inserted into the query function of PHP
+//         $sql = "INSERT INTO users (name,surname,hotelname,arrival,departure) VALUES ('$name', '$surname', '$hotelname', '$arrival', '$departure')";
 
             
-            if ($db_server->query($sql)) {
-              header("location: reservation.php"); //user gets redirected to the reservation page where their reservation can be displayed
-            } else {
-                echo "Error: " . "<br>" . $sql . "<br>" . $db_server->error; //user will get an error if the booking cannot be saved.
-            }
-    }
+//             if ($db_server->query($sql)) {
+//               header("location: reservation.php"); //user gets redirected to the reservation page where their reservation can be displayed
+//             } else {
+//                 echo "Error: " . "<br>" . $sql . "<br>" . $db_server->error; //user will get an error if the booking cannot be saved.
+//             }
+//     }
 
 
    
