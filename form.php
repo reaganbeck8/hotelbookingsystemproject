@@ -9,6 +9,7 @@
  $_SESSION['arrival'] = "";
  $_SESSION['departure'] = "";
  $_SESSION['days'] = "";
+ $_SESSION['totalcost'] = "";
  
  
  ?>
@@ -155,20 +156,8 @@
 
                 //     $cost = $price1 * $days
                 // }
-                    //finding absolute value from date of booking for price purposes
-
-                    $datetime1 = new DateTime($_POST['arrival']);
-                    $datetime2 = new DateTime($_POST['departure']);
-                    $_SESSION['days'] = $datetime1->diff($datetime2);
-                 
-                    mysqli_select_db($db_server, 'test_db');
-                    $hotel_res = $db_server->query("SELECT * FROM users");
-
-                    while($row = $hotel_res->fetch_assoc()) {
-                        if ($row["name"] == $name) {
-                           
-                        }
-                    }
+                    
+                    
         ?> </h3>
     </section> -->
    

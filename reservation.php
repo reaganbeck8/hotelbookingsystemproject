@@ -1,9 +1,10 @@
 <?php include_once 'includes/conn.php' ;
+    include_once 'includes/functions.php';
 
 session_start();
 
 
-
+$userReservation = new userReservation();
 
 
 
@@ -30,6 +31,7 @@ session_start();
         <h1><?php echo $_SESSION['hotelname'];?></h1>
         <h1><?php echo $_SESSION['arrival'];?></h1>
         <h1><?php echo $_SESSION['departure'];?></h1>
-        <h1><?php echo $_SESSION['days']->format('%a') . " " . "days"?> </h1>
+        <h1><?php echo $_SESSION['days']->format('%a');?> </h1>
+        <h1><?php echo $_SESSION['totalcost'];?> </h1>
     </body>
     </html>
