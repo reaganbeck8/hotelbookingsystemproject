@@ -35,6 +35,6 @@ $userReservation->userBookingDetails($db_server);
         <h1><?php echo $_SESSION['arrival'];?></h1>
         <h1><?php echo $_SESSION['departure'];?></h1>
         <h1><?php echo $_SESSION['days']->format('%a');?> </h1>
-        <h1><?php echo $_SESSION['totalcost'] . " Rands";?></h1>
+        <h1><?php echo $_SESSION['totalcost'] . " ZAR";?></h1>
     </body>
     </html>

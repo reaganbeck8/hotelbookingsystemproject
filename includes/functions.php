@@ -1,4 +1,5 @@
-<?php 
+<?php
+ 
 include_once 'conn.php';
 // CREATE TABLE IF NOT EXISTS `users` (
 //     `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -81,7 +82,7 @@ $userReservation = new userReservation();
                 $_SESSION['hotelname'] = $hotelname;
                 $_SESSION['arrival'] = $arrival;
                 $_SESSION['departure'] = $departure;
-
+        //switch statement for the hotel dropdown
             switch ($hotelname) {
 
                 case($hotelname == "The Silo"): 
@@ -95,11 +96,14 @@ $userReservation = new userReservation();
                 break;
 
             }
+            //calculating the total cost of what the user will have to pay to the hotel
 
             $totalCost = $price*$totaldays;
 
             $_SESSION['totalcost'] = $totalCost;
             
+            //creating the query that will be insert
+
             $sql1 = "INSERT INTO hotels (name,hotelname,price,arrival,departure) VALUES ('$name','$hotelname','$totalCost','$arrival','$departure')";
 
             // selecting the database through the connection '$db_server'
